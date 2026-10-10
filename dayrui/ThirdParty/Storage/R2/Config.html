@@ -1,0 +1,36 @@
+<div class="form-group r r6">
+    <label class="col-md-2 control-label">Access Key ID</label>
+    <div class="col-md-7">
+        <input name="data[value][6][accessKeyId]" value="{htmlspecialchars((string)$data['value']['accessKeyId'])}" class="form-control" type="text" autocomplete="off" />
+        <span class="help-block">填写 R2 S3 API 凭据中的 Access Key ID。</span>
+    </div>
+</div>
+<div class="form-group r r6">
+    <label class="col-md-2 control-label">Secret Access Key</label>
+    <div class="col-md-7">
+        <input name="data[value][6][accessKeySecret]" value="{htmlspecialchars((string)$data['value']['accessKeySecret'])}" class="form-control" type="password" autocomplete="off" />
+        <span class="help-block">填写 Secret Access Key，不是 Cloudflare 全局 API Key。</span>
+    </div>
+</div>
+<div class="form-group r r6">
+    <label class="col-md-2 control-label">Bucket</label>
+    <div class="col-md-7">
+        <input name="data[value][6][bucket]" value="{htmlspecialchars((string)$data['value']['bucket'])}" class="form-control" type="text" autocomplete="off" />
+        <span class="help-block">填写 R2 存储桶名称。</span>
+    </div>
+</div>
+<div class="form-group r r6">
+    <label class="col-md-2 control-label">S3 Endpoint</label>
+    <div class="col-md-7">
+        <input name="data[value][6][endpoint]" value="{htmlspecialchars((string)$data['value']['endpoint'])}" class="form-control" type="text" autocomplete="off" />
+        <span class="help-block">完整 HTTPS API 地址，例如 https://ACCOUNT_ID.r2.cloudflarestorage.com；不要填写自定义访问域名。</span>
+    </div>
+</div>
+<div class="form-group r r6">
+    <label class="col-md-2 control-label">指定目录</label>
+    <div class="col-md-7">
+        <input name="data[value][6][path]" value="{htmlspecialchars((string)$data['value']['path'])}" class="form-control" type="text" autocomplete="off" />
+        <span class="help-block">选填，例如 test/test2；下方附件访问URL必须包含相同目录，并以 / 结尾。</span>
+    </div>
+</div>
+<div class="form-group r r6"><label class="col-md-2 control-label">访问说明</label><div class="col-md-7"><p class="form-control-static">附件访问URL填写已绑定 R2 的公开自定义域名或 r2.dev 地址。生产环境建议使用自定义域名。S3 Endpoint 仅用于上传和删除，不是公开访问地址。</p></div></div>
